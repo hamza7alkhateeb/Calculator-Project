@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Site — Home</title>
+  <link rel="stylesheet" href="static/styles.css" />
+  <script defer src="static/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">MySite</a>
+  </header>
+
+   <main>
+    <section class=" container calculator-simple">
+      <h2>Simple calculator</h2>
+      
+      <input type="number" id="num1" placeholder="Please insert the first number">
+      <input type="number" id="num2" placeholder="Please insert the second number">
+      
+      <select id="operation">
+        <option value="">Select Operation</option>
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+      </select>
+  
+      <button class="button button-calculate" onclick="calculate()">Calculate</button>
+  
+      <div class="result" id="result"></div>
+    </section>
+    <section class=" container calculator-complex">
+      <h2>Complex calculator</h2>
+      <div class="display">
+        <div class="display-main">
+          0
+        </div>
+        
+        <div class="display-operations">
+          
+        </div>
+      </div>
+      <div class="row">
+        <button class="button ac" style="background: indianred;" data-action="ac">ac</button>
+        <button class="button ce" style="background: darkslategray;" data-action="ce">ce</button>
+        <button class="button div" data-action="div">/</button>
+        <button class="button mult" data-action="mult">x</button>
+      </div>
+      <div class="row">
+        <button class="button seven">7</button>
+        <button class="button eight">8</button>
+        <button class="button nine">9</button>
+        <button class="button minus" data-action="minus">-</button>
+      </div>
+      <div class="row">
+        <button class="button four">4</button>
+        <button class="button five">5</button>
+        <button class="button six">6</button>
+        <button class="button plus" data-action="plus">+</button>
+      </div>
+      <div class="bottom-row">
+        <div class="left">
+          <div class="row">
+            <button class="button one">1</button>
+            <button class="button two">2</button>
+            <button class="button three">3</button>
+          </div>
+          
+          <div class="row">
+            <button class="button zero">0</button>
+            <button class="button dot">.</button>
+          </div>
+        </div>
+        
+        <div class="right">
+          <button class="button eq" data-action="eq">=</button>
+        </div>
+  
+      </div>
+    </section>
+
+    
+  </main>
+
+
+  
+  
+  <footer class="site-footer">
+    <p>© <span id="year"></span></p>
+  </footer>
+</body>
+</html>
